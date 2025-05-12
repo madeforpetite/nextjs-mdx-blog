@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className="px-5  mx-auto">
       <Header />
 
       {/* hero */}
-      <div className="mb-20 px-5 md:px-0">
+      <div className="mb-20 ">
         <div className="h-[250px] md:h-[600px] rounded-md relative">
           <Image src={"/images/hero.png"} alt="hero image" sizes="100vh" fill />
           <div className="absolute -bottom-8 bg-white dark:bg-[#242535] p-6 ml-10 rounded-lg shadow-lg max-w-[80%] md:max-w-[40%]">
@@ -27,12 +27,12 @@ export default function Home() {
       </div>
 
       {/* content */}
-      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5  w-full">
         {posts.map((p, idx) => (
           <Link
             key={idx}
             href={`/blog/${p.slug}`}
-            className="p-4 group rounded-lg border w-[392px] border-gray-200 dark:border-gray-700"
+            className="p-4 group rounded-lg border  border-gray-200 dark:border-gray-700"
           >
             {/* image */}
             <div className="h-60 w-full relative overflow-hidden rounded-md object-cover group-hover:scale-105 duration-300 transition-all">

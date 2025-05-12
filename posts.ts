@@ -9,7 +9,7 @@ export interface IPost {
 
 export const posts: IPost[] = [
   {
-    title: "Abc Efg",
+    title: "Abc Efgfdfejfz zefze zrjfghzrjj ",
     slug: "abc-efg",
     author: "Robert Liu",
     date: "2024-02-28",
